@@ -29,7 +29,7 @@ async function seedUsers() {
   return insertedUsers;
 }
 
-async function seedInvoices() {
+export async function seedInvoices() {
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
 
   await sql`
